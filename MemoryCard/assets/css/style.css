@@ -1,0 +1,106 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	height: 100vh;
+	display: flex;
+	background-image: url(../img/vivaItalia.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.memory-game {
+	width: 640px;
+	height: 640px;
+	margin: auto;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.memory-card {
+	width: calc(25% - 10px);
+	height: calc(33.333% - 10px);
+	margin: 5px;
+	position: relative;
+	transform: scale(1);
+	transform-style: preserve-3d;
+	transition: 1s;
+}
+
+.memory-card:active {
+	transform: scale(0.97);
+	transition: 2s;
+}
+
+.memory-card.flip {
+	transform: rotateY(180deg);
+}
+
+.front-face,
+.back-face {
+	width: 100%;
+	height: 100%;
+	padding: 5px;
+	position: absolute;
+	border-radius: 5px;
+	background: #12894d;
+	backface-visibility: hidden;
+}
+
+.front-face {
+	transform: rotateY(180deg);
+}
+
+@media screen and (max-width:576px) {
+	body {
+		height: 100vh;
+		display: flex;
+		background-image: none;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+
+	.memory-card {
+		width: calc(25% - 10px);
+		height: 8rem;
+		margin: none;
+		position: relative;
+		transform: scale(1);
+		transform-style: preserve-3d;
+		transition: 1s;
+	}
+
+	.memory-game {
+		width: 640px;
+		height: auto;
+		margin: auto;
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+}
+
+@font-face {
+	font-family: "christmas sprouts";
+	src: url("../fonts/Christmas\ Sprouts.ttf");
+}
+
+h1 {
+	font-family: "christmas sprouts";
+	color: #182744;
+
+}
+
+.footer {
+	background-color: #182744;
+	color: white;
+	position: absolute;
+	width: 100%;
+	bottom: 0;
+	height: 1.5em;
+	font-family: "christmas sprouts";
+
+}

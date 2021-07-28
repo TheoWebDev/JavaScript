@@ -1,0 +1,61 @@
+.invisible{
+    display: none;
+}
+button {
+    backface-visibility: hidden;
+  width: 44px;
+  height: 44px;
+  cursor: pointer;
+  white-space: nowrap;
+  background: rgb(255, 255, 255);
+  border-radius: 100px;
+  border-width: 3px 3px 3px 3px;
+  padding: 8px 10px 7px 10px;
+  font-size: 16px;
+  
+  font-style: normal;
+  text-shadow: 0px -1px 0px rgba(0,0,0,0.3)
+  }
+
+.backImg{
+    background-image: url(https://cdn.hipwallpaper.com/i/90/15/e1ouJF.jpg);
+    background-position: center;
+    border: 2px solid black;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.caseCalcul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+}
+
+.secondCasee{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 3%;
+    font-size: 50%;
+}
+
+.firstOperation{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+img.bg{
+    min-height: 100%;
+    min-width: 1024px;
+    width: 100%;
+    height: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+}

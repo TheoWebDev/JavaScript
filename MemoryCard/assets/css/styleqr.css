@@ -1,0 +1,42 @@
+/* Div Accueil */
+
+.fond {
+    background-image: url(../img/background.jpg) ;
+    height: 300px;
+}
+
+body {
+    background-color: #182744;
+}
+h1 {
+    font-family:"christmas sprouts" ;
+    color: ivory;
+    font-size: 100px ;
+}
+
+h2,h3,p {
+    font-family: "christmas sprouts";
+    color: ivory;
+}
+
+.footer {
+        background-color: #182744;
+        color: white;
+        position:absolute;
+        width: 100%;
+        bottom: 0;
+        height: 1.5em;
+}
+
+/*Police */
+
+@font-face {
+    font-family: "christmas sprouts";
+    src: url("../fonts/Christmas\ Sprouts.ttf");
+};
+
+@font-face {
+    font-family: "little santa";
+    src: url("../fonts/Little\ Santa\ Personal\ Use\ Only.ttf");
+    src: url("../fonts/Little\ Santa\ Personal\ Use\ Only.otf");
+};
