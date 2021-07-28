@@ -1,14 +1,28 @@
-function changeColor(value){
+let pText = document.getElementById("pText");
 
-    document.getElementById("text").style.color = `${value}`;
+function changeColor(){
+
+    if (pText.style.color == "blue") {
+        pText.style.color = "initial";
+    } else {
+        pText.style.color = "blue";
+    }
 }
 
-function changeTextBold(value){
+function changeTextBold(){
 
-    document.getElementById("text").style.fontWeight = `${value}`;
-}
+    if (pText.style.fontWeight == "bold") {
+        pText.style.fontWeight = "initial";
+    } else {
+        pText.style.fontWeight = "bold";
+    }
+    }
 
-function changeTextit(value){
+function changeUp(){
 
-    document.getElementById("text").style.fontStyle = `${value}`;
+    if (pText.style.fontSize == "120%") {
+        pText.style.fontSize = "initial";
+    } else {
+        pText.style.fontSize = "120%";
+    }
 }
